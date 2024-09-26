@@ -9,7 +9,7 @@ header, main, footer{
     border: 1px solid white;
     /*appropriate padding*/
     padding: 1rem;
-    background-color: navy;
+    background-color: cyan;
 }
 
 main{
