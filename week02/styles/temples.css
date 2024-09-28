@@ -1,0 +1,35 @@
+/*MOBILE USE*/
+*{
+
+}
+
+body{
+
+}
+
+header{
+
+}
+
+nav{
+
+}
+nav a{
+
+}
+nav a:hover{
+
+}
+
+main{
+
+}
+
+figure{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer{
+    background-color: green;
+}
