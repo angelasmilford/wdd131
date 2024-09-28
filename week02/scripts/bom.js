@@ -1,43 +1,50 @@
-//3 variables that gold references to the input, button, and list elements
+//3 variables that reference favchap, button, and list
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector(''); //fill in the black
+const list = document.querySelector('#list');
 
-//creates a li element that'll hold each entry's chapter title and associated delete button
-const li = document.createElement('li'); //'li' was just for simplicity; it didn't have to be named the same as the element being created
-
-//creates a delete button
-const deleteButton = document.createElement('button');
-
-//populates the li element variable's textContent or innerHTML with the input value
-//value property is used because the input variable references the wanted HTML input text field
-li.textContent = input.value; //its textContent because it's more secure, doesn't include HTML tags
-
-//populate the button 'textContent' with a ❌
-deleteButton.textContent = '❌';
-
-//append the li element variable with the delete button
-li.append(deleteButton);
-
-//append the li element variable to the unordered list in your HTML
-list.append(li);
-
-//creates a click event listener for the 'Add Chapter' button using an addEventListener
+//
 button.addEventListener('click', function() {
-    //
-    if(input.value.trim() != ''){
 
+    if (input.value.trim() != ''){
+        //creates an 'li' element to hold the chapters with X
+        const li = document.createElement('li');
+
+        //delete button
+        const deleteButton = document.createElement('button');
+
+        //populates the li element
+        li.textContent = input.value;
+
+        //populates textContent with '❌'
+        deleteButton.textContent = '❌';
+
+        //append the li element with '❌'
+        li.append(deleteButton);
+
+        //appends the li element to the HTML's ul
+        list.append(li);
+
+        //delete button
+        deleteButton.addEventListener('click', function() {
+            //
+            list.removeChild(li);
+            //
+            input.focus();
+        });
+
+        //
+        input.focus();
+        return;
+    }
+    else
+    {
+        alert("Item cannot be blank.")
+        input.focus();
+        return;
     }
 });
 
-//adds a click event listener to the delete button that removes the li element
-deleteButton.addEventListener('click', function() {
-    list.removeChild(li);
-    input.focus();
-});
-
-//changes the input value to nothing or the empty string to clean up the interface for the user
 input.value = '';
 
-//
 input.focus();
