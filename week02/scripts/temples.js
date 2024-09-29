@@ -14,8 +14,17 @@ function displayLastModified() {
 displayCurrentYear();
 displayLastModified();
 
+
 //Hamburger effect that only shows in the mobile view
 
 //clicking the hamburger button toggles the navigation menu items from viewable to not viewable
 
 //use a symbol, such as 'X' to close the hamburger menu
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => { //changed to 'click'
+	navigation.classList.toggle('open');//changed to 'classList' and 'open'
+	hamButton.classList.toggle('open');
+});
