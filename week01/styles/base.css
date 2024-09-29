@@ -5,33 +5,37 @@
 
 body{
     margin: 0 auto;
-    max-width: 980px;
-    height: 100vh;
+    max-width: 990px;
 }
 
+
+
 header{
-    background-color: navy;
+    background: navy;
 }
 
 h1{
     color: white;
     text-align: center;
+    font-size: 30px;
     padding: 30px;
-    font-size: 40px;
 }
+
 h1 span{
-    color: gold;
     font-size: 25px;
+    color: gold;
 }
+
+
 
 nav{
     background-color: black;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 15px;
+
 }
 nav a{
-    display: block;
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -39,127 +43,134 @@ nav a{
 nav a:hover{
     color: gold;
 }
-nav a:active{
-    color: silver;
-}
+
+
 
 main{
     display: grid;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 970px;
 }
+
+
 
 .card{
     background-color: silver;
-    margin: 20px 9px;
     border: 1px white;
-    border-radius: 10px;
+    margin: 20px 6px;
+    border-radius: 15px;
 }
 
-
-.card.intro{
+.intro{
     grid-column: 1 / 3;
 }
 
 .profile{
-    padding-left: 20px;
-    padding-right: 40px;
-    padding-bottom: 25px;
-    padding-top: 20px;
+    padding: 15px;
 }
 .profile img{
     float: right;
-    padding-left: 15px;
+    width: 135px;
+    height: 150px;
+    padding-left: 10px;
 }
 .profile p{
-    padding-top: 15px;
+    padding: 1px;
 }
 
 .birthplace{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 70px;
-}
-.birthplace p{
-    padding-top: 20px;
+    padding: 15px;
 }
 
 .flag{
-    float: left;
 }
 .flag img{
-    padding-bottom: 0px;
+    float: left;
+    width: 220px;
+    height: 120px;
     padding-right: 15px;
-    padding-top: 20px;
 }
 .flag figcaption{
-    font-size: 16.5px;
-    padding-top: 10px;
-}
+    font-size: 16px;
 
-img{
-    width: 190;
 }
 
 h3{
     text-align: center;
-    padding-bottom: 5px;
-    font-size: 25px;
-    border-bottom: 1px solid black;
-    width: 650px;
-    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 20px;
 }
 
-.card.resources{
+
+
+.resources{
     grid-column: 3 / 3;
 }
-.resources ul{
-    display: block;
-    padding: 170px 50px;
+
+ul{
+    padding: 50px;
 }
-.resources ul li{
-    padding-bottom: 25px;
+
+li{
+    padding: 10px;    
 }
-.resources ul li a{
+
+li a{
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
-.resources ul li a:hover{
+li a:hover{
     color: navy;
 }
 
+
+
+
 h2{
-    background-color: navy;
+    background: navy;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-p{
-    font-size: 15.5px;
-}
+
 
 footer{
-    background-color: navy;
-    font-family: "Jacquarda Bastarda 9", serif;
-}
-footer p{
-    text-align: center;
-    padding-top: 10px;
-    font-size: 25px;
+    background: navy;
     color: white;
-}
-footer #last p{
-    color: gold;
-    padding-bottom: 10px;
+    text-align: center;
+    padding: 25px;
     font-size: 20px;
 }
-
-h1, h2, h3{
-    font-family: "Press Start 2P", system-ui;
+footer p{
+    color: white;
 }
 
-nav, main{
-    font-family: "M PLUS Code Latin", monospace;
+
+@media (max-width: 640px){
+    h1{
+
+    }
+
+    h2{
+
+    }
+
+    nav{
+
+    }
+
+    nav a{
+
+    }
+
+    main{
+
+    }
+
+    .resources ul{
+
+    }
 }
