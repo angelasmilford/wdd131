@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header{
+    background: red;
+    grid-column: 1 / 4;
+}
+
+h1{
+    padding: 2rem;
+}
+
+nav{
+    background: black;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    background: orange;
+    grid-column: 2 / 3;
+}
+
+.aside{
+    background: yellow;
+    grid-column: 3 / 4;
+    padding: 1rem;
+}
+
+footer{
+    background: green;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
