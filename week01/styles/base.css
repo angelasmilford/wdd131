@@ -83,6 +83,7 @@ main{
 }
 
 .flag{
+    padding-top: 20px;
 }
 .flag img{
     float: left;
@@ -98,7 +99,9 @@ main{
 h3{
     text-align: center;
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    width: 650px;
 }
 
 
