@@ -168,7 +168,7 @@ nav, main{
 
 
 /*MOBLIE use*/
-@media (max-width: 640px){
+/*@media (max-width: 640px){
     h1{
 
     }
@@ -192,4 +192,4 @@ nav, main{
     .resources ul{
 
     }
-}
+}*/
