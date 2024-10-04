@@ -6,7 +6,7 @@
 /*BODY*/
 body{
     margin: 0 auto;
-    max-width: 990px;
+    max-width: 970px;
 }
 
 /*HEADER elements*/
@@ -52,7 +52,7 @@ nav a:active{
 main{
     display: grid;
     margin: 0 auto;
-    max-width: 970px;
+    max-width: 950px;
 }
 
 
