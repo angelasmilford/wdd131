@@ -69,21 +69,21 @@ main{
 }
 
 .profile{
-    padding: 15px;
+    padding: 20px 20px 45px;
 }
 .profile img{
     float: right;
-    width: 150px;
-    height: 160px;
-    padding-left: 10px;
+    width: 165px;
+    height: 165px;
+    padding: 15px;
 }
 .profile p{
     font-size: 13.1px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .birthplace{
-    padding: 15px;
+    padding: 20px;
 }
 .birthplace p{
     font-size: 13.1px;
