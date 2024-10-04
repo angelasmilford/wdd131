@@ -162,6 +162,9 @@ footer{
 footer p{
     color: white;
 }
+.last{
+    font-size: 10px;
+}
 
 
 /*Grouped Elements*/
