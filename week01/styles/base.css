@@ -6,7 +6,7 @@
 /*BODY*/
 body{
     margin: 0 auto;
-    max-width: 970px;
+    max-width: 990px;
 }
 
 /*HEADER elements*/
@@ -52,7 +52,7 @@ nav a:active{
 main{
     display: grid;
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 970px;
 }
 
 
@@ -117,6 +117,11 @@ h3{
 .resources{
     grid-column: 3 / 3;
 }
+.resources h2{
+    font-size: 14.24999px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
 
 ul{
     padding: 50px;
@@ -179,6 +184,12 @@ nav, main{
         font-size: 15px;
     }
 
+    h3{
+        font-size: 13px;
+        border-bottom: 1px solid black;
+        width: 299px;
+    }
+
     nav{
         padding: 13px 9px;
     }
@@ -197,6 +208,5 @@ nav, main{
 
     .resources ul{
         margin-top: 30px;
-        margin: 75px 0px;
     }
 }
