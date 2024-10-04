@@ -170,28 +170,33 @@ nav, main{
 
 
 /*MOBLIE use*/
-/*@media (max-width: 640px){
+@media (max-width: 600px){
     h1{
-
+        font-size: 18px;
     }
 
     h2{
-
+        font-size: 15px;
     }
 
     nav{
-
+        padding: 13px 9px;
     }
 
     nav a{
-
+        font-size: 13px;
+        padding: 0px 10px;
+        margin-bottom: 10px;
     }
 
     main{
-
+        display: block;
+        width: 360px;
+        margin: 0 auto;
     }
 
     .resources ul{
-
+        margin-top: 30px;
+        margin: 75px 0px;
     }
-}*/
+}
