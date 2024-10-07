@@ -67,8 +67,8 @@
     }
 
     img{
-        width: 320px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
     }
 
     figcaption{
@@ -81,7 +81,10 @@
 
     footer{
         background-color: white;
-        color: navy;
         text-align: center;
+    }
+
+    footer p{
+        color: navy;
     }
 }
