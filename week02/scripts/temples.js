@@ -28,3 +28,11 @@ hamButton.addEventListener('click', () => { //changed to 'click'
 	navigation.classList.toggle('open');//changed to 'classList' and 'open'
 	hamButton.classList.toggle('open');
 });
+
+
+const hamburger = document.querySelector('.hamburger');
+const header = document.querySelector('header');
+
+hamburger.addEventListener('click', () => {
+    header.classList.toggle('')
+});

@@ -1,125 +1,70 @@
-/*MOBILE USE*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*MOBILE*/
+@media (max-width: 320px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-body{
-    background-color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    body{
 
-header{
-    background-color: green;
-    padding: 50px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between; /* Pushes nav to the right */
-    align-items: center; /* Vertically aligns the items */
-}
-
-/* Styling for h1 */
-h1 {
-    color: white;
-    margin-right: 30px; /* Space between the heading and the nav */
-    font-size: 45px;
-}
-
-/* Styling for navigation */
-.navbar {
-    flex-grow: 1; /* Allows the navbar to take up remaining space */
-    padding-left: 290px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-/* Optional: Hover effect */
-.nav-links li a:hover {
-    color: cyan;
-}
+    }
 
 
-#menu{
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: white;
-    position: fixed;
-    top: 1;
-    left: 0;
-}
-#menu::before{
-    content:"☰";
-}
-#menu.open::before{
-    content: "❎";
-}
 
 
-main{
-    margin: 0 auto;
-    padding: 10px;
-}
+    header{
 
-h2{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
+    }
 
-.album{
-    display: grid;
-    gap: 10px;
-    padding: 20px;
-}
-.photo img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.photo img:hover{
-    box-shadow: cyan;
-}
+    .hamburger{
+        display: block;
+    }
 
-figure{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    h1{
+        font-size: 25px;
+    }
 
-figcaption{
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 5px;
-    color: white;
-}
+    nav{
+        display: none;
+        flex-direction: column;
+    }
 
-footer{
-    background-color: green;
-    padding: 20px;
-}
-footer p{
-    text-align: center;
-    font-size: 25px;
-    color: white;
-}
+    nav a{
+        text-decoration: none;
+        color: navy;
+    }
 
-header, footer{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+    main{
+        background-color: navy;
+    }
+
+    h2{
+        font-size: 17.5px;
+        text-align: center;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img{
+        width: 320px;
+        height: 250px;
+    }
+
+    .gallery figcaption{
+        text-align: center;
+    }
+
+
+
+
+    footer{
+        background-color: white;
+        color: navy;
+        text-align: center;
+    }
 }

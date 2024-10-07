@@ -1,91 +1,89 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Picture Album</title>
-        <meta name="description" content="This webpage holds a picture album that's responsive in small and larger views. The album contains photos of temples within the Pacific region.">
-        <meta name="author" content="Angela S Milford">
-        <link rel="stylesheet" href="styles/temples.css">
-        <script src="scripts/temples.js" defer></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="Angela Milford">
+    <link rel="stylesheet" href="styles/temples.css" media="screen and (max-width: 320px)">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 1024px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
 
-    <body>
-        <header>
-            <button id="menu"></button>
-            
-            <div class="header">
-                <h1>Temple Album</h1>
-            
-                <nav class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Old</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Large</a></li>
-                        <li><a href="#">Small</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <main>
-            <h2>Home</h2>
-            
-            <div class="album">
-                <figure class="photo">
-                    <img src="images/apia-samoa-temple-8652.jpg" alt="Samoan Temple" loading="lazy">
-                </figure>
-                <figcaption>Apia, Samoa Temple</figcaption>
-    
-                <figure class="photo">
-                    <img src="images/suva-fiji-temple-8555.jpg" alt="Fijian Temple" loading="lazy">
-                </figure>
-                <figcaption>Suva, Fiji Temple</figcaption>
-                
-                <figure class="photo">
-                    <img src="images/nuku'alofa-tonga-temple-12093.jpg" alt="Tongan Temple" loading="lazy">
-                </figure>
-                <figcaption>Nuku'alofa, Tonga Temple</figcaption>
-                
-                <figure class="photo">
-                    <img src="images/Yigo-Guam-Temple-2022_(1).jpg" alt="Guamanian Temple" loading="loading">
-                </figure>
-                <figcaption>Yigo, Guam Temple</figcaption>
-    
-                <figure class="photo">
-                    <img src="images/025-Papeete-Tahiti-Temple.jpg" alt="Tahitian Temple" loading="lazy">
-                </figure>
-                <figcaption>Papeete, Tahiti Temple</figcaption>
-                
-                <figure class="photo">
-                    <img src="images/Laie-Hawaii-Temple-Front.jpg" alt="Hawaiian Temple" loading="lazy">
-                </figure>
-                <figcaption>Laie, Hawaii Temple</figcaption>
-                
-                <figure class="photo">
-                    <img src="images/Brisbane_Australia_Temple_exterior.jpg" alt="Australian Temple" loading="lazy">
-                </figure>
-                <figcaption>Brisbane, Australia Temple</figcaption>
-    
-                <figure class="photo">
-                    <img src="images/Hamilton-New-Zealand-Temple-2022.jpg" alt="New Zealandan Temple" loading="lazy">
-                </figure>
-                <figcaption>Hamilton, New Zealand Temple</figcaption>
+<body>
+    <header>
+        <h1>Temple Album</h1>
 
-                <figure class="photo">
-                    <img src="images/sydney-australia-temple-16030.jpg" alt="Australian Temple" loading="lazy">
-                </figure>
-                <figcaption>Sydney, Australia Temple</figcaption>
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy;<span id="currentyear"></span> 🏝️ Angela S Milford 🏝️ American Samoa</p>
+        <button class="hamburger">
             
-            <div id="last">
-                <p>Last Modified: <span id="lastModified"></span> </p>
-            </div> 
-        </footer>
-    </body>
+        </button>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <section class="gallery">
+            <figure>
+                <img src="images/apia_samoa_temple_lds.webp" alt="Samoa's Temple">
+                <figcaption>Apia, Samoa</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/suva_fiji_temple_lds.webp" alt="Fiji's Temple">
+                <figcaption>Suva, Fiji</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nuku'alofa-tonga-temple-12094.jpg" alt="Tonga's Temple">
+                <figcaption>Nuku'alofa, Tonga</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/yigo_guam_temple.jpeg" alt="Guam's Temple">
+                <figcaption>Yigo, Guam</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/papeete_tahiti_temple.webp" alt="Tahiti's Temple">
+                <figcaption>Papeete, Tahiti</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Laie-Hawaii-Temple-Front.jpg" alt="Hawaii's Temple">
+                <figcaption>Laie, Hawaii</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Hamilton-New-Zealand-Temple-2022.jpg" alt="New Zealand's Temple">
+                <figcaption>Hamilton, New Zealand</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Melbourne_australia_temple.jpg" alt="Austalia's Temple">
+                <figcaption>Melbourne, Australia</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sydney-australia-temple-43342-main.jpg" alt="Australia's additional Temple">
+                <figcaption>Sydney, Australia</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>&copy;<span id="currentyear"></span>🏝️ Angela S Milford 🏝️ American Samoa</b></p>
+
+        <p>Last Modified: <span id="lastModified"></span> </p>
+    </footer>
+</body>
 </html>

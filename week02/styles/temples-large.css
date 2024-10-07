@@ -1,6 +1,109 @@
-/*LARGER VIEW*/
-@media (min-width: 767px){
-    .photos{
+/*DESKTOP*/
+@media (min-width: 1024px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        
+    }
+
+
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background-color: white;
+        color: navy;
+    }
+
+    .hamburger{
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    h1{
+        margin: 0;
+        font-size: 50px;
+    }
+
+    nav{
+        list-style: none;
+        display: flex;
+        gap: 70px;
+    }
+
+    nav a{
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
+
+    nav a:hover{
+        color: gold;
+    }
+
+
+
+
+    main{
+        background-color: navy;
+        padding: 110px;
+    }
+
+    h2{
+        text-align: center;
+        padding: 10px 10px 40px;
+        font-size: 35px;
+        color: white;
+    }
+
+    .gallery{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 90px;
+
+        padding-bottom: 60px;
+    }
+
+    figure{
+        margin: 0;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    figcaption{
+        margin-top: 10px;
+        font-size: 14px;
+        color: white;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+
+
+
+    footer{
+        background: white;
+        color: navy;
+        text-align: center;
+        padding: 25px;
+        font-size: 25px;
+    }
+
+    footer p{
+
     }
 }
