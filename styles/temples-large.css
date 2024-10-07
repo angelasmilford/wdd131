@@ -48,6 +48,7 @@
 
     nav a:hover{
         color: gold;
+        text-decoration: overline;
     }
 
 
@@ -55,12 +56,12 @@
 
     main{
         background-color: navy;
-        padding: 110px;
+        padding: 120px;
     }
 
     h2{
         text-align: center;
-        padding: 10px 10px 40px;
+        padding-bottom: 40px;
         font-size: 43px;
         color: white;
     }
