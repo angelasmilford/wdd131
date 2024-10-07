@@ -1,90 +1,90 @@
 /*MOBILE*/
-@media (max-width: 320px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-
-    }
 
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
+body{
 
-    header{
-        background: white;
-        padding: 60px;
-    }
-
-    .hamburger{
-        display: block;
-    }
-
-    h1{
-        font-size: 25px;
-        color: navy;
-        margin: 0;
-    }
-
-    nav{
-        display: none;
-    }
-
-    nav a{
-        text-decoration: none;
-        color: navy;
-        font-size: 15px;
-    }
-
-    .menu-active nav{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+}
 
 
 
 
-    main{
-        background-color: navy;
-        padding: 5px;
-    }
+header{
+    background: white;
+    padding: 60px;
+}
 
-    h2{
-        font-size: 17.5px;
-        text-align: center;
-        padding: 5px;
-    }
+.hamburger{
+    display: block;
+}
 
-    figure{
-        margin: 0;
-        text-align: center;
-    }
+h1{
+    font-size: 25px;
+    color: navy;
+    margin: 0;
+}
 
-    .gallery{
-        grid-template-columns: 1fr;
-    }
+nav{
+    display: none;
+}
 
-    img{
-        width: 300px;
-        height: 200px;
-    }
+nav a{
+    text-decoration: none;
+    color: navy;
+    font-size: 15px;
+}
 
-    figcaption{
-        color: navy;
-        padding-bottom: 10px;
-    }
+.menu-active nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 
 
-    footer{
-        background-color: white;
-        text-align: center;
-    }
+main{
+    background-color: navy;
+    padding: 5px;
+}
 
-    footer p{
-        color: navy;
-    }
+h2{
+    font-size: 17.5px;
+    text-align: center;
+    padding: 5px;
+}
+
+figure{
+    margin: 0;
+    text-align: center;
+}
+
+.gallery{
+    grid-template-columns: 1fr;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
+
+figcaption{
+    color: navy;
+    padding-bottom: 10px;
+}
+
+
+
+
+footer{
+    background-color: white;
+    text-align: center;
+}
+
+footer p{
+    color: navy;
 }
