@@ -26,12 +26,17 @@
 
     nav{
         display: none;
-        flex-direction: column;
     }
 
     nav a{
         text-decoration: none;
         color: navy;
+    }
+
+    .menu-active nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
 
@@ -46,6 +51,11 @@
         text-align: center;
     }
 
+    figure{
+        margin: 0;
+        text-align: center;
+    }
+
     .gallery{
         grid-template-columns: 1fr;
     }
@@ -56,7 +66,8 @@
     }
 
     .gallery figcaption{
-        text-align: center;
+        color: navy;
+        padding-bottom: 10px;
     }
 
 
