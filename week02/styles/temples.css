@@ -13,7 +13,8 @@
 
 
     header{
-
+        background: white;
+        padding: 60px;
     }
 
     .hamburger{
@@ -22,6 +23,8 @@
 
     h1{
         font-size: 25px;
+        color: navy;
+        margin: 0;
     }
 
     nav{
@@ -31,6 +34,7 @@
     nav a{
         text-decoration: none;
         color: navy;
+        font-size: 15px;
     }
 
     .menu-active nav{
@@ -44,11 +48,13 @@
 
     main{
         background-color: navy;
+        padding: 5px;
     }
 
     h2{
         font-size: 17.5px;
         text-align: center;
+        padding: 5px;
     }
 
     figure{
@@ -60,12 +66,12 @@
         grid-template-columns: 1fr;
     }
 
-    .gallery img{
+    img{
         width: 320px;
         height: 250px;
     }
 
-    .gallery figcaption{
+    figcaption{
         color: navy;
         padding-bottom: 10px;
     }
