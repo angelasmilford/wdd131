@@ -20,6 +20,14 @@ header{
     display: block;
 }
 
+.hamburger::before{
+    content: "☰";
+}
+
+.hamburger.open::before{
+    content: "❎";
+}
+
 h1{
     font-size: 30px;
     color: navy;
@@ -34,12 +42,6 @@ nav a{
     text-decoration: none;
     color: navy;
     font-size: 15px;
-}
-
-.menu-active nav{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 
