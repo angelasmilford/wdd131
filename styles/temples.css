@@ -13,7 +13,7 @@ body{
 
 header{
     background: white;
-    padding: 60px;
+    padding: 40px;
 }
 
 .hamburger{
@@ -21,7 +21,7 @@ header{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 30px;
     color: navy;
     margin: 0;
 }
@@ -51,14 +51,16 @@ main{
 }
 
 h2{
-    font-size: 17.5px;
+    font-size: 18px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    color: white;
 }
 
 figure{
     margin: 0;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .gallery{
@@ -71,8 +73,8 @@ img{
 }
 
 figcaption{
-    color: navy;
-    padding-bottom: 10px;
+    color: white;
+    padding-top: 5px;
 }
 
 
@@ -81,10 +83,7 @@ figcaption{
 footer{
     background-color: white;
     text-align: center;
-    padding: 60px;
-}
-
-footer p{
+    padding: 40px;
+    font-size: 14px;
     color: navy;
-    font-size: 30px;
 }
