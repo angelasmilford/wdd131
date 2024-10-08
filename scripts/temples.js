@@ -1,11 +1,11 @@
-//variables
-const hamButton = document.querySelector('.hamburger');
+//variables for the hamburger button and navigation panel
+const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-//click event
+//click event to open and close the hamburger button
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
 });
 
 
