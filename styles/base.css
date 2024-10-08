@@ -3,6 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 
+h1, h2, h3{
+    font-family: "Press Start 2P", system-ui;
+}
+
+nav, main{
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+footer{
+    font-family: "Jacquarda Bastarda 9", serif;
+}
+
 
 *{
     margin: 0;
