@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1, h2, h3{
+    font-family: "Press Start 2P", system-ui;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+nav, main{
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
+footer{
+    font-family: "Jacquarda Bastarda 9", serif;
+}

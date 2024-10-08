@@ -157,23 +157,12 @@ footer{
     text-align: center;
     padding: 25px;
     font-size: 20px;
-    font-family: "Jacquarda Bastarda 9", serif;
 }
 footer p{
     color: white;
 }
 .last{
     font-size: 10px;
-}
-
-
-/*Grouped Elements*/
-h1, h2, h3{
-    font-family: "Press Start 2P", system-ui;
-}
-
-nav, main{
-    font-family: "M PLUS Code Latin", monospace;
 }
 
 
