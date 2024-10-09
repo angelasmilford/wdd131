@@ -8,20 +8,12 @@
 
 
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
         background-color: white;
         font-family: "Cinzel", serif;
     }
 
     #menu{
         display: none;
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 24px; /*should this really be here?*/
     }
 
     h1{
@@ -31,7 +23,6 @@
     }
 
     nav{
-        list-style: none;
         display: flex;
         gap: 70px;
     }
@@ -40,10 +31,12 @@
         text-decoration: none;
         font-size: 30px;
         color: black;
+        display: block;
     }
 
     nav a:hover{
         color: gold;
+        background-color: white;
         text-decoration: overline;
     }
 
