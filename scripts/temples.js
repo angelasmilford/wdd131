@@ -2,7 +2,7 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-//click event to open and close the hamburger button
+//click event to open and close the navigation panel using the hamburger button
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
