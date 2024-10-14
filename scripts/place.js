@@ -13,3 +13,30 @@ function displayLastModified() {
 // Call the functions to update the footer
 displayCurrentYear();
 displayLastModified();
+
+
+
+function calculateWindchill(temperature, windSpeed) {
+    if (temperature <= 50 && windSpeed > 3) {
+      return (
+        35.74 +
+        0.6215 * temperature -
+        35.75 * Math.pow(windSpeed, 0.16) +
+        0.4275 * temperature * Math.pow(windSpeed, 0.16)
+      ).toFixed(2);
+    }
+    return "N/A"; // Windchill is not applicable
+  }
+  
+  // Display the windchill factor when the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    const tempElement = document.getElementById("temperature");
+    const windElement = document.getElementById("wind-speed");
+    const windchillElement = document.getElementById("windchill");
+  
+    const temperature = parseFloat(tempElement.textContent);
+    const windSpeed = parseFloat(windElement.textContent);
+  
+    const windchill = calculateWindchill(temperature, windSpeed);
+    windchillElement.textContent = `${windchill} °F`;
+  });

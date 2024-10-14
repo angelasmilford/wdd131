@@ -1,17 +1,23 @@
-@media (min-width: 1920px){
-    *{
+@media (min-width: 1024px){
 
-    }
 
     header{
+        padding: 60px;
+    }
 
+    h1{
+        font-size: var(--desktop-h1-size);
     }
 
     main{
+        height: 769px;
+    }
 
+    .weather::after{
+        font-size: 2.5rem;
     }
 
     footer{
-        
+        padding: 20px;
     }
 }

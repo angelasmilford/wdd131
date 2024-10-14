@@ -4,13 +4,35 @@
 }
 
 :root{
-    
+    --primary-color: red;
+    --secondary-color: white;
+    --accent-color: brown;
+    --background-color: blue;
+    --font-color: white;
+
+    --heading-font: '', ;
+    --body-font: '', ;
+    --font-size-heading: 20px;
+    --font-size-body: 1rem;
+
+    --desktop-h1-size: 60px;
+    --desktop-h2-size: 30px;
+    --desktop-font-size: 15px;
+
+    --mobile-h1-size: 30px;
+    --mobile-h2-size: 15px;
+    --mobile-font-size: 12px;
 }
 
 
-header{
-    text-align: center;
 
+
+
+header{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding: 30px;
+    text-align: center;
 }
 
 h1{
@@ -18,11 +40,45 @@ h1{
 }
 
 
+
+
+
 main{
+    display: block;
+    margin: 0 auto;
+}
+
+div{
+
+}
+
+section{
 
 }
 
 .hero{
+
+}
+
+img{
+    width: 320px;
+    height: 823px;
+}
+
+.box{
+    width: 280px;
+    height: 481px;
+}
+
+.data{
+    
+}
+
+.weather{
+
+}
+
+.icon{
 
 }
 
@@ -31,6 +87,12 @@ h2{
 }
 
 
+
+
 footer{
-    
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    color: var(--secondary-color);
 }

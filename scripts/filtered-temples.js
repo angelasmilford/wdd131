@@ -16,6 +16,7 @@ displayLastModified();
 
 
 
+
 //variables for the hamburger button and navigation panel
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -28,7 +29,7 @@ hamButton.addEventListener('click', () => {
 
 
 
-//Temples 
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -86,56 +87,47 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+  // Add more temple objects here...
   {
     templeName: "Apia Samoa",
     location: "Apia, Samoa",
-    dedicated: "August 5-7, 1983",
-    area: 18691,
+    dedicated: "",
+    area: ,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-13905-main.jpg"
+    ""
   },
   {
     templeName: "Suva Fiji",
     location: "Suva, Fiji",
-    dedicated: "June 18, 2000",
-    area: 12755,
+    dedicated: "",
+    area: ,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/suva-fiji-temple/suva-fiji-temple-8571-main.jpg"
+    ""
   },
   {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
-    dedicated: "May 22, 2022",
-    area: 6861,
+    dedicated: "",
+    area: ,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
+    ""
   }
 ];
 
-createTempleCard();
+function renderTempleCards(temples) {
+  const container = document.getElementsByClassName('.gallery');
+  container.innerHTML = ''; // Clear previous content
 
-function createTempleCard(filteredTemples){
-  filteredTemples.array.forEach(element => {
-    let card = document.createElement('section');
-    let name = document.createElement('h2');
-    let location = document.createElement('p');
-    let area = document.createElement('p');
-    let img = document.createElement('img');
-  
-    name.textContent = temples.templeName;
-    location.innerHTML = `<span class="label">Location:</span> ${temples.location}`;
-    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temples.dedicated}`;
-    area.innerHTML = `<span class="label">Area:</span> ${temples.area} sq ft`;
-    img.setAttribute("src", temples.imageUrl);
-    img.setAttribute("alt", `${temples.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
-  
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedicated);
-    card.appendChild(area);
-    card.appendChild(img);
-  
-    document.querySelector(".gallery").appendChild(card);
+  temples.forEach(temple => {
+    const card = document.createElement('div');
+    card.classList.add('temple-card');
+    card.innerHTML = `
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+      <h2>${temple.templeName}</h2>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+    `;
+    container.appendChild(card);
   });
 }
