@@ -4,21 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lazy Load</title>
+        <link rel="stylesheet" href="styles/lazyload.css">
+        <script src="scripts/lazyload.js" defer></script>
     </head>
 
     <body>
         <header>
-            <h1></h1>
+            <h1>Lazy Loading</h1>
         </header>
         
         <main>
-            <section>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <section class="fade-in">
+                <img src="https://via.placeholder.com/400x600" alt="Placeholder 1" loading="lazy">
+                <img src="https://via.placeholder.com/400x700" alt="Placeholder 2" loading="lazy">
+                <img src="https://via.placeholder.com/400x800" alt="Placeholder 3" loading="lazy">
+                <img src="https://via.placeholder.com/400x900" alt="Placeholder 4" loading="lazy">
+                <img src="https://via.placeholder.com/400x650" alt="Placeholder 5" loading="lazy">
+                <img src="https://via.placeholder.com/400x750" alt="Placeholder 6" loading="lazy">
             </section>
         </main>
         
