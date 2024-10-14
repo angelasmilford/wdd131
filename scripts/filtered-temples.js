@@ -114,20 +114,54 @@ const temples = [
   }
 ];
 
-function renderTempleCards(temples) {
-  const container = document.getElementsByClassName('.gallery');
-  container.innerHTML = ''; // Clear previous content
+const gallery = document.getElementsByClassName('gallery');
 
-  temples.forEach(temple => {
-    const card = document.createElement('div');
-    card.classList.add('temple-card');
-    card.innerHTML = `
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-      <h2>${temple.templeName}</h2>
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-    `;
-    container.appendChild(card);
+temples.forEach(temple => {
+  const card = document.createElement('section');
+  card.className = '.gallery';
+  card.innerHTML = `
+    <h2>${temple.templeName}</h2>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area} sq ft</p>
+    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+  `;
+  templeContainer.appendChild(card);
+});
+
+displayTemples(temples);
+
+document.getElementById('home').addEventListener('click', (e) => {
+  e.preventDefault();
+  displayTemples(temples);
+});
+
+document.getElementById('old').addEventListener('click', (e) => {
+  e.preventDefault();
+  const oldTemples = temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
+    return year < 1900;
   });
-}
+  displayTemples(oldTemples);
+});
+
+document.getElementById('new').addEventListener('click', (e) => {
+  e.preventDefault();
+  const newTemples = temples.filter(temple => {
+    const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
+    return year > 2000;
+  });
+  displayTemples(newTemples);
+});
+
+document.getElementById('large').addEventListener('click', (e) => {
+  e.preventDefault();
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  displayTemples(largeTemples);
+});
+
+document.getElementById('small').addEventListener('click', (e) => {
+  e.preventDefault();
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  displayTemples(smallTemples);
+});
