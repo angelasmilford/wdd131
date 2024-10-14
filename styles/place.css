@@ -36,7 +36,7 @@ header{
 }
 
 h1{
-
+    font-size: var(--mobile-h1-size);
 }
 
 
@@ -57,7 +57,9 @@ section{
 }
 
 .hero{
-
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 img{
@@ -68,10 +70,10 @@ img{
 .box{
     width: 280px;
     height: 481px;
-}
+
 
 .data{
-    
+
 }
 
 .weather{

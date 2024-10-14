@@ -9,13 +9,36 @@
         font-size: var(--desktop-h1-size);
     }
 
+
+
+
+
     main{
         height: 769px;
     }
 
-    .weather::after{
-        font-size: 2.5rem;
+    .box{
+        display: grid;
     }
+
+    .data{
+
+    }
+
+    .weather{
+
+    }
+
+    .icon{
+
+    }
+
+    h2{
+
+    }
+
+
+
 
     footer{
         padding: 20px;
