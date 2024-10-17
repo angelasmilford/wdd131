@@ -1,84 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-:root{
+:root {
     --primary-color: red;
     --secondary-color: white;
-    --accent-color: brown;
+    --text-color: white;
+    --secondary-text-color: black;
     --background-color: blue;
-    --font-color: white;
-
-    --heading-font: '', ;
-    --body-font: '', ;
-    --font-size-heading: 20px;
-    --font-size-body: 1rem;
-
-    --desktop-h1-size: 60px;
-    --desktop-h2-size: 30px;
-    --desktop-font-size: 15px;
-
-    --mobile-h1-size: 30px;
-    --mobile-h2-size: 15px;
-    --mobile-font-size: 12px;
-}
-
-
-
-
-
-header{
+  }
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: var(--background-color);
-    color: var(--font-color);
-    padding: 30px;
+    color: var(--text-color);
+}
+
+
+
+
+header {
     text-align: center;
+    background-color: var(--background-color);
+    padding: 15px;
+    color: white;
 }
-
-h1{
-    font-size: var(--mobile-h1-size);
-}
-
+  
 
 
 
 
 main{
-    display: block;
-    margin: 0 auto;
+    background-color: var(--primary-color);
 }
 
-.hero{
+section{
+    background-color: var(--secondary-color);
+}
+
+.hero img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-}
-
-img{
-    width: 320px;
-    height: 823px;
-}
-
-.box{
-    width: 280px;
-    height: 481px;
-
 }
 
 .data{
-
+    padding: 20px;
 }
 
 .weather{
-
-}
-
-.icon{
-
+    padding: 20px;
 }
 
 h2{
+    text-align: center;
+    color: var(--secondary-text-color);
+}
 
+p{
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+  
+.weather-icon {
+    text-align: center;
+    margin: 1rem 0;
+}
+  
+  /* Hide the SVG icon in desktop */
+  .mobile-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
 
@@ -86,8 +75,10 @@ h2{
 
 footer{
     background-color: var(--background-color);
-    text-align: center;
-    padding: 15px;
-    font-size: 17px;
-    color: var(--secondary-color);
+    padding: 20px;
+
+}
+footer p{
+    color: var(--text-color);
+    font-size: 18px;
 }

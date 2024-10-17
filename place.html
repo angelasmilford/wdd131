@@ -7,6 +7,7 @@
         <meta name="description" content="The content of this webpage focuses on the place I grew up in, American Samoa.">
         <meta name="author" content="Angela S Milford">
         <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-medium.css" media="screen and (min-width: 768px)">
         <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 1024px)">
         <script src="scripts/place.js" defer></script>
     </head>
@@ -26,34 +27,26 @@
                 </picture>
             </div>
 
+            <section class="data">
+                <h2>Data</h2>
 
-            <section class="box">
-                <div class="data">
-                    <h2>Data</h2>
-                    <dl>
-                        <dt><b>Area:</b> sq km</dt>
-                        <dt><b>Population:</b> </dt>
-                        <dt><b>Capital:</b> Pago Pago</dt>
-                        <dt><b>Languages:</b> Samoan, English</dt>
-                        <dt><b>Currency:</b> United States Dollars</dt>
-                        <dt><b>Time Zone:</b> UTC-11</dt>
-                        <dt><b>Calling Code:</b> +1(684)</dt>
-                        <dt><b>Internet LTD:</b> </dt>
-                    </dl>
-                </div>
-            
-                <!--SVG image format for the weather icon in the mobile view-->
-                <div class="weather">
-                    <span class="icon">⛅</span>
-                    <h2>Weather</h2>
+                <p><b>Area:</b> 200 sq km</p>
+                <p><b>Population:</b> 44,620</p>
+                <p><b>Capital:</b> Pago Pago</p>
+                <p><b>Languages:</b> Samoan, English</p>
+                <p><b>Currency:</b> United States dollar</p>
+                <p><b>Time Zone:</b> UTC-11:00 (SST)</p>
+                <p><b>Calling Code:</b> +1-684</p>
+                <p><b>Internet TLD</b> .as</p>
+            </section>
 
-                    <dl>
-                        <dt><b>Temperature:</b> </dt>
-                        <dt><b>Conditions:</b> </dt>
-                        <dt><b>Wind:</b> </dt>
-                        <dt><b>Wind Chill:</b> </dt>
-                    </dl>
-                </div>
+            <section class="weather">
+                <h2>Weather ⛅</h2>
+
+                <p><b>Temperature:</b> <span id="temp"> 10°C</span></p>
+                <p><b>Conditions:</b> <span id="condition"> Cloudy</span></p>
+                <p><b>Wind:</b> <span id="wind"> 5 km/h</span></p>
+                <p><b>Wind Chill:</b> <span id="windChill"> Calculating...</span></p>
             </section>
         </main>
 
