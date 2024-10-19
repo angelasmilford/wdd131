@@ -18,42 +18,44 @@
             <h1>American Samoa</h1>
         </header>
 
-        <!--use WebP images-->
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 768px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-small.webp" alt="American Samoa's national flower, ylangylang" width="320" height="auto">
-            </picture>
-        </div>
-
-        <section class="data">
-            <h2 class="highlight">Data</h2>
-
-            <p><b>Area:</b> 200 sq km</p>
-            <p><b>Population:</b> 44,620</p>
-            <p><b>Capital:</b> Pago Pago</p>
-            <p><b>Languages:</b> Samoan, English</p>
-            <p><b>Currency:</b> United States dollar</p>
-            <p><b>Time Zone:</b> UTC-11:00 (SST)</p>
-            <p><b>Calling Code:</b> +1-684</p>
-            <p><b>Internet TLD:</b> .as</p>
-        </section>
-
-        <section class="weather">
-            <h2 class="highlight">
-                <span class="icon-desktop">⛅</span> Weather <!--this needs to be an svg image, but how?-->
-            </h2>
-
-            <div class="icon-mobile">
-                <img src="images/weather.svg" alt="Weather Icon" />
+        <main>
+            <!--use WebP images-->
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 768px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-small.webp" alt="American Samoa's national flower, ylangylang" width="320" height="auto">
+                </picture>
             </div>
 
-            <p><b>Temperature:</b> <span id="temp"> 10°C</span></p>
-            <p><b>Conditions:</b> <span id="condition"> Cloudy</span></p>
-            <p><b>Wind:</b> <span id="wind"> 5 km/h</span></p>
-            <p><b>Wind Chill:</b> <span id="windChill"> Calculating...</span></p>
-        </section>
+            <section class="data">
+                <h2 class="highlight">Data</h2>
+
+                <p><b>Area:</b> 200 sq km</p>
+                <p><b>Population:</b> 44,620</p>
+                <p><b>Capital:</b> Pago Pago</p>
+                <p><b>Languages:</b> Samoan, English</p>
+                <p><b>Currency:</b> United States dollar</p>
+                <p><b>Time Zone:</b> UTC-11:00 (SST)</p>
+                <p><b>Calling Code:</b> +1-684</p>
+                <p><b>Internet TLD:</b> .as</p>
+            </section>
+
+            <section class="weather">
+                <h2 class="highlight">
+                    <span class="icon-desktop">⛅</span> Weather <!--this needs to be an svg image, but how?-->
+                </h2>
+
+                <div class="icon-mobile">
+                    <img src="images/weather.svg" alt="Weather Icon" />
+                </div>
+
+                <p><b>Temperature:</b> <span id="temp"> 10°C</span></p>
+                <p><b>Conditions:</b> <span id="condition"> Cloudy</span></p>
+                <p><b>Wind:</b> <span id="wind"> 5 km/h</span></p>
+                <p><b>Wind Chill:</b> <span id="windChill"> Calculating...</span></p>
+            </section>
+        </main>
 
         <footer>
             <p><b>&copy;<span id="currentyear"></span>🏝️ Angela S Milford 🏝️ American Samoa</b></p>
