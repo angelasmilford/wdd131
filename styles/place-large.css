@@ -13,7 +13,7 @@
 
     .data {
         position: absolute;
-        top: 16%;    /* 10% from the top */
+        top: 15%;    /* 10% from the top */
         left: 2%;   /* 10% from the left */
         background-color: var(--secondary-color); /* Semi-transparent background */
         padding: 10px;
@@ -23,11 +23,11 @@
     /* Weather section positioned at the bottom-right */
     .weather {
         position: absolute;
-        bottom: 7%;  /* 10% from the bottom */
+        bottom: 5%;  /* 10% from the bottom */
         right: 2%;   /* 10% from the right */
         background-color: var(--secondary-color); /* Semi-transparent background */
         padding: 10px;
-        width: 200px; /* Fixed width */
+        width: 250px; /* Fixed width */
     }
 
     .weather h2::after {
@@ -44,6 +44,19 @@
     .icon-desktop{
         font-size: 1rem;
     }
+
+    .highlight {
+        background-color: var(--primary-color);      /* Blue background color */
+        color: white;                /* Text color for contrast */
+        padding: 10px 15px;         /* Padding around the text */
+        margin-left: -15px;         /* Negative margin to pull it left */
+        margin-top: 0;              /* Adjust top margin if necessary */
+        margin-bottom: 20px;        /* Space below the header */
+        border-radius: 5px;         /* Rounded corners (optional) */
+        display: inline-block;       /* Allow margins and paddings to work correctly */
+        width: 190px;
+    }
+    
 
     h2{
         background-color: var(--h2-background-color);
