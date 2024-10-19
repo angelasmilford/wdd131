@@ -17,29 +17,41 @@ displayLastModified();
 
 
 
-const temp = 10; // Temperature in Celsius
-const windSpeed = 5; // Wind speed in km/h
-const condition = "Cloudy"; // Static weather condition
+// Static values for temperature and wind speed (match displayed values)
+const temperature = 10; // °C
+const windSpeed = 5;    // km/h
 
-function calculateWindChill(temp, windSpeed) {
-  return (
-    13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 
-    0.3965 * temp * Math.pow(windSpeed, 0.16)
-  ).toFixed(2); // Round 2 decimal places
+/**
+ * Calculate wind chill factor using the Celsius formula.
+ * @param {number} temp - Temperature in °C.
+ * @param {number} wind - Wind speed in km/h.
+ * @returns {string} - Wind chill factor rounded to 1 decimal place.
+ */
+function calculateWindChill(temp, wind) {
+    return (
+        13.12 +
+        0.6215 * temp -
+        11.37 * Math.pow(wind, 0.16) +
+        0.3965 * temp * Math.pow(wind, 0.16)
+    ).toFixed(1); // Return result rounded to 1 decimal place
 }
 
+/**
+ * Display wind chill factor if conditions are met, otherwise show "N/A".
+ */
 function displayWindChill() {
-  const windChillElement = document.getElementById("windChill");
-  const conditionElement = document.getElementById("condition");
+    let windChill;
 
-  conditionElement.textContent = condition;
+    // Check if temperature <= 10°C and wind speed > 4.8 km/h
+    if (temperature <= 10 && windSpeed > 4.8) {
+        windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
+    } else {
+        windChill = "N/A"; // Not applicable
+    }
 
-  if (temp <= 10 && windSpeed > 4.8) {
-    const windChill = calculateWindChill(temp, windSpeed);
-    windChillElement.textContent = `${windChill} °C`;
-  } else {
-    windChillElement.textContent = "N/A";
-  }
+    // Display wind chill factor in the weather section
+    document.getElementById("windChill").textContent = windChill;
 }
 
-document.addEventListener("DOMContentLoaded", displayWindChill);
+// Run displayWindChill when the page loads
+window.onload = displayWindChill;
