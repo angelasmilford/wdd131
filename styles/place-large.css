@@ -23,11 +23,11 @@
     /* Weather section positioned at the bottom-right */
     .weather {
         position: absolute;
-        bottom: 5%;  /* 10% from the bottom */
-        right: 2%;   /* 10% from the right */
-        background-color: var(--secondary-color); /* Semi-transparent background */
+        bottom: 0%;  
+        right: 2%; 
+        background-color: var(--secondary-color);
         padding: 10px;
-        width: 250px; /* Fixed width */
+        width: 250px; 
     }
 
     .weather h2::after {
@@ -46,14 +46,14 @@
     }
 
     .highlight {
-        background-color: var(--primary-color);      /* Blue background color */
-        color: white;                /* Text color for contrast */
-        padding: 10px 15px;         /* Padding around the text */
-        margin-left: -15px;         /* Negative margin to pull it left */
-        margin-top: 0;              /* Adjust top margin if necessary */
-        margin-bottom: 20px;        /* Space below the header */
-        border-radius: 5px;         /* Rounded corners (optional) */
-        display: inline-block;       /* Allow margins and paddings to work correctly */
+        background-color: #452100; 
+        color: gold;         
+        padding: 10px 15px;    
+        margin-left: -15px;       
+        margin-top: 0;           
+        margin-bottom: 20px;    
+        border-radius: 5px;     
+        display: inline-block;     
         width: 190px;
     }
     
@@ -64,6 +64,7 @@
         text-align: justify;
         position: relative;
         display: inline-block;
+        font-size: 34px;
     }
 
 

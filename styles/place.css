@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+
 :root {
     --primary-color: red;
     --secondary-color: white;
@@ -6,12 +12,13 @@
     --text-color: white;
     --secondary-text-color: black;
     --background-color: blue;
-    --font-family: ;
-  }
+    --primary-font-family: "Rowdies", sans-serif;
+    --secondary-font-family: "Ubuntu Mono", monospace;
+}
   
 body {
     margin: 0;
-    font-family: var(--font-family);
+    font-family: var(--secondary-font-family);
     background-color: var(--primary-color);
     color: var(--text-color);
 }
@@ -24,6 +31,7 @@ header {
     background-color: var(--background-color);
     padding: 15px;
     color: white;
+    font-family: var(--primary-font-family);
 }
   
 
@@ -37,16 +45,9 @@ header {
     background-color: var(--primary-color);
 }
 
-.box{
+.data, .weather{
     background-color: var(--secondary-color);
-}
-
-.data{
-    padding: 20px;
-}
-
-.weather{
-    padding: 20px;
+    padding: 30px;
 }
 
 .icon-desktop{
@@ -58,8 +59,8 @@ header {
 }
 
 .icon-mobile img {
-    width: 50px;
-    height: 50px;
+    width: 450px;
+    height: 70px;
     margin: 0 auto;
 }
 
@@ -81,6 +82,7 @@ footer{
     background-color: var(--background-color);
     padding: 20px;
     text-align: center;
+    font-family: var(--primary-font-family);
 
 }
 footer p{
