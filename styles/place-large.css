@@ -1,42 +1,62 @@
 @media (min-width: 1024px){
     header{
-
+        padding: 10px;
     }
 
 
 
-    main{
-
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    section{
-        background-color: white;
-        color: black;
+    .data {
+        position: absolute;
+        top: 16%;    /* 10% from the top */
+        left: 2%;   /* 10% from the left */
+        background-color: var(--secondary-color); /* Semi-transparent background */
+        padding: 10px;
+        width: 250px; /* Fixed width */
+    }
+    
+    /* Weather section positioned at the bottom-right */
+    .weather {
+        position: absolute;
+        bottom: 7%;  /* 10% from the bottom */
+        right: 2%;   /* 10% from the right */
+        background-color: var(--secondary-color); /* Semi-transparent background */
+        padding: 10px;
+        width: 200px; /* Fixed width */
     }
 
-    .data{
-
+    .weather h2::after {
+        content: '⛅';
+        color: var(--accent-color);
+        font-size: 2rem;
+        margin-left: 10px;
     }
 
-    .weather{
-        
-    }
-
-    /* Hide SVG in wider screens */
-    .mobile-icon {
+    .icon-mobile{
         display: none;
     }
+      
+    .icon-desktop{
+        font-size: 1rem;
+    }
 
-    /* Use a pseudo-element to insert the ⛅ emoticon after the h2 */
-    .weather h2::after {
-        content: ' ⛅';
-        font-size: 1.5rem;
-        margin-left: 0.5rem;
+    h2{
+        background-color: var(--h2-background-color);
+        color: var(--h2-color);
+        text-align: justify;
+        position: relative;
+        display: inline-block;
     }
 
 
 
     footer{
-
+        font-size: 20px;
+        padding-bottom: 10px;
     }
 }
