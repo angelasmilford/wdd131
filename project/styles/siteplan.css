@@ -1,0 +1,52 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.first-color{
+    background-color: #03045E;
+}
+
+.second-color{
+    background-color: #0077B6;
+}
+
+.third-color{
+    background-color: #90E0EF;
+}
+
+.heading{
+    font-family: "Galindo", sans-serif;
+    font-size: 20px;
+}
+
+.paragraph{
+    font-family: "Passero One", sans-serif;
+    font-size: 15px;
+}
+
+footer{
+
+}
+
+header, footer{
+    background-color: #03045E;
+}
+
+h1, footer p{
+    color: white;
+    padding: 20px;
+}
+
+h1, h2, p, .heading, .paragraph{
+    text-align: center;
+}
+
+.first-color, .second-color, .third-color{
+    color: white;
+    font-size: 15px;
+}
