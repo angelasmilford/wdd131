@@ -5,7 +5,8 @@
 }
 
 :root{
-
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -13,13 +14,14 @@
 
 header{
     background-color: green;
+    color: white;
+    text-align: center;
 }
 
 
 
 
 main{
-    display: block;
     margin: 0 auto;
 }
 
@@ -28,4 +30,8 @@ main{
 
 footer{
     background-color: green;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 17px;
 }
