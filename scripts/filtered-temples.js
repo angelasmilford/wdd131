@@ -1,35 +1,3 @@
-// Function to display the current year
-function displayCurrentYear() {
-  const currentYear = new Date().getFullYear(); // Get the current year
-  document.getElementById('currentyear').textContent = currentYear; // Update the year in the footer
-}
-
-// Function to display the last modified date
-function displayLastModified() {
-  const lastModifiedDate = document.lastModified; // Get the last modified date of the document
-  document.getElementById('lastModified').textContent = lastModifiedDate; // Update last modified in the footer
-}
-
-// Call the functions to update the footer
-displayCurrentYear();
-displayLastModified();
-
-
-
-
-//variables for the hamburger button and navigation panel
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-//click event to open and close the navigation panel using the hamburger button
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
-
-
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -91,77 +59,103 @@ const temples = [
   {
     templeName: "Apia Samoa",
     location: "Apia, Samoa",
-    dedicated: "",
-    area: ,
-    imageUrl:
-    ""
+    dedicated: "1983, August, 5-7",
+    area: 18691,
+    imageUrl: 
+      "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-13905-main.jpg"
   },
   {
     templeName: "Suva Fiji",
     location: "Suva, Fiji",
-    dedicated: "",
-    area: ,
-    imageUrl:
-    ""
+    dedicated: "2000, June, 18",
+    area: 12755,
+    imageUrl: 
+      "https://churchofjesuschristtemples.org/assets/img/temples/suva-fiji-temple/suva-fiji-temple-8571-main.jpg",
   },
   {
-    templeName: "Yigo Guam",
-    location: "Yigo, Guam",
-    dedicated: "",
-    area: ,
-    imageUrl:
-    ""
-  }
+    templeName: "Tokyo Japan",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27-29",
+    area: 53997,
+    imageUrl: 
+      "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg",
+  },
 ];
 
-const gallery = document.getElementsByClassName('gallery');
+// Function to filter and display temples based on the category
+function filterTemples(category) {
+  const templeContainer = document.getElementById('templeContainer');
+  templeContainer.innerHTML = ''; // Clear the container
 
-temples.forEach(temple => {
-  const card = document.createElement('section');
-  card.className = '.gallery';
-  card.innerHTML = `
-    <h2>${temple.templeName}</h2>
-    <p><strong>Location:</strong> ${temple.location}</p>
-    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-    <p><strong>Area:</strong> ${temple.area} sq ft</p>
-    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-  `;
-  templeContainer.appendChild(card);
-});
+  let filteredTemples;
+  
+  switch (category) {
+    case 'old':
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+      break;
+    case 'new':
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+      break;
+    case 'large':
+      filteredTemples = temples.filter(temple => parseInt(temple.area) > 90000);
+      break;
+    case 'small':
+      filteredTemples = temples.filter(temple => parseInt(temple.area) < 10000);
+      break;
+    case 'home':
+    default:
+      filteredTemples = temples;
+      break;
+  }
 
-displayTemples(temples);
+  // Loop through the filtered temples and create cards
+  filteredTemples.forEach(temple => {
+    const card = document.createElement('div');
+    card.classList.add('temple-card');
 
-document.getElementById('home').addEventListener('click', (e) => {
-  e.preventDefault();
-  displayTemples(temples);
-});
+    card.innerHTML = `
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+      <h3>${temple.templeName}</h3>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Area:</strong> ${temple.area} sq ft</p>
+    `;
 
-document.getElementById('old').addEventListener('click', (e) => {
-  e.preventDefault();
-  const oldTemples = temples.filter(temple => {
-    const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
-    return year < 1900;
+    // Append the card to the container
+    templeContainer.appendChild(card);
   });
-  displayTemples(oldTemples);
+}
+
+// Initially display all temples
+filterTemples('home');
+
+
+
+//variables for the hamburger button and navigation panel
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+//click event to open and close the navigation panel using the hamburger button
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
 });
 
-document.getElementById('new').addEventListener('click', (e) => {
-  e.preventDefault();
-  const newTemples = temples.filter(temple => {
-    const year = parseInt(temple.dedicated.split(",")[0]); // Extract year
-    return year > 2000;
-  });
-  displayTemples(newTemples);
-});
 
-document.getElementById('large').addEventListener('click', (e) => {
-  e.preventDefault();
-  const largeTemples = temples.filter(temple => temple.area > 90000);
-  displayTemples(largeTemples);
-});
 
-document.getElementById('small').addEventListener('click', (e) => {
-  e.preventDefault();
-  const smallTemples = temples.filter(temple => temple.area < 10000);
-  displayTemples(smallTemples);
-});
+
+// Function to display the current year
+function displayCurrentYear() {
+    const currentYear = new Date().getFullYear(); // Get the current year
+    document.getElementById('currentyear').textContent = currentYear; // Update the year in the footer
+}
+
+// Function to display the last modified date
+function displayLastModified() {
+    const lastModifiedDate = document.lastModified; // Get the last modified date of the document
+    document.getElementById('lastModified').textContent = lastModifiedDate; // Update last modified in the footer
+}
+
+// Call the functions to update the footer
+displayCurrentYear();
+displayLastModified();

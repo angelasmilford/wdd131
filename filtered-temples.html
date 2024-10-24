@@ -3,12 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Temple Album</title>
-        <meta name="description" content="This webpage displays images of the LDS temple in the Pacific region.">
-        <meta name="author" content="Angela Milford">
+        <title>Filtered Temple</title>
+        <meta name="description" content="This webpage displays images LDS Temples through a JavaScript array.">
+        <meta name="author" content="Angela S Milford">
         <link rel="stylesheet" href="styles/filtered-temples.css">
         <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 1024px)">
         <script src="scripts/filtered-temples.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
 
@@ -19,18 +27,18 @@
             <button id="menu"></button>
 
             <nav class="navigation">
-                <a href="#" id="home" title="Home">Home</a>
-                <a href="#" id="old" title="Old">Old</a>
-                <a href="#" id="new" title="New">New</a>
-                <a href="#" id="large" title="Large">Large</a>
-                <a href="#" id="small" title="Small">Small</a>
+                <button onclick="filterTemples('home')">Home</button>
+                <button onclick="filterTemples('old')">Old</button>
+                <button onclick="filterTemples('new')">New</button>
+                <button onclick="filterTemples('large')">Large</button>
+                <button onclick="filterTemples('small')">Small</button>
             </nav>
         </header>
 
         <main>
             <h2>Home</h2>
 
-            <section class="gallery"></section>
+            <div class="container" id="templeContainer"></div>
         </main>
 
         <footer>
