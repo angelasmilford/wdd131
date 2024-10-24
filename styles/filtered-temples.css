@@ -64,11 +64,17 @@ nav button{
   text-decoration: none;
   color: black;
   background-color: white;
+  border: none;
 }
 nav button:hover{
   color: gold;
-  font-weight: 700;
 }
+
+nav a:hover{
+  text-decoration: overline;
+  color: gold;
+}
+
 
 .open button{
   display: block;
