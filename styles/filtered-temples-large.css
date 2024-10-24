@@ -33,18 +33,15 @@
         color: black;
     }
 
-    nav button{
+    nav a{
         font-family: "Cinzel", serif;
         border: none; 
         padding: 10px 20px;
         margin: 0 1px;
     }
 
-    nav button:hover{
-        text-decoration: overline;
-    }
-
     nav a:hover{
+        text-decoration: overline;
         color: gold;
     }
 
