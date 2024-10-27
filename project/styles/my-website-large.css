@@ -1,5 +1,6 @@
 @media screen and (min-width: 1024px){
     header{
+    
     }
 
     #menu{
@@ -32,7 +33,6 @@
 
 
     main{
-
     }
 
     .hero{
@@ -44,6 +44,7 @@
         text-align: center;
     }
 
+    /*HOME*/
     figure{
         margin: 0;
         text-align: center;
@@ -68,16 +69,31 @@
 
     /*CULTURE*/
     .box{
-        border-width: 1px white;
+        border: 1px white;
+        margin: 20px 6px;
+        border-radius: 15px;
+        padding: 90px;
     }
 
-    .culture, .arts{
-        float: left;
+    .box p{
+        font-size: 13px;
+        width: 100%;
     }
 
-    .lang, .rel{
+    .culture img, .arts img{
         float: right;
+        width: 400px;
+        height: auto;
+        padding: 15px;
     }
+
+    .lang img, .rel img{
+        float: left;
+        width: 400px;
+        height: auto;
+        padding: 15px;
+    }
+
 
 
 

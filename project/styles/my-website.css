@@ -44,11 +44,11 @@ header{
     content: "❎";
 }
 
-.nav {
+nav {
     display: none;
 }
 
-.nav.open {
+nav.open {
     display: block;
 }
 
@@ -194,6 +194,24 @@ figcaption{
     margin: 5px 15px;
     color: var(--paragraph-color);
     font-size: 12px;
+}
+
+/*CULTURE*/
+.box img{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.box h2{
+    padding-top: 30px;
+}
+
+.box p{
+    width: 160px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 
