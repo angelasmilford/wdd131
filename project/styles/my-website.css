@@ -89,6 +89,7 @@ main{
     background-color: var(--background-color);
     color: var(--paragraph-color);
     font-family: "Passero One", sans-serif;
+    padding: 20px;
 }
 
 .hero {
@@ -101,6 +102,8 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 0;
+    margin: 0;
 }
 
 h2{
@@ -214,6 +217,84 @@ figcaption{
     padding-bottom: 80px;
 }
 
+/*Tourism*/
+.cta-button {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .cta-button:hover {
+    background-color: #026ba0;
+    transform: scale(1.05);
+  }
+
+  /* Section Styling */
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .destination-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .destination-button {
+    margin-top: 20px;
+  }
+
+  /* Activities List */
+  .activities-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .activities-item {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* Gallery Section */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery-image-container:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .gallery-image-container:hover .gallery-image {
+    opacity: 0.8;
+  }
 
 
 

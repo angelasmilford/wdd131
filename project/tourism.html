@@ -13,7 +13,15 @@
 
     <body>
         <header>
-            <h1>Tourism</h1>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/" media="min-width: 1024px">
+                    <source srcset="images/" media="min-width: 768px">
+                    <img src="images/" alt="Micronesia">
+                </picture>
+            </div>
+            
+            <h1>Discover the Beauty of Micronesia</h1>
 
             <button id="menu"></button>
 
@@ -26,9 +34,44 @@
         </header>
 
         <main>
-            <h2>Explore All of What Micronesia has to Offer</h2>
+            <!-- Activities Section -->
+            <section class="section activities">
+                <h2 class="activities-title">Things to Do</h2>
+                
+                <ul class="activities-list">
+                    <li class="activities-item">🏝️ Island Hopping Adventures</li>
+                    <li class="activities-item">🤿 Explore Coral Reefs</li>
+                    <li class="activities-item">🎉 Join Local Festivals</li>
+                    <li class="activities-item">🍴 Taste Authentic Cuisine</li>
+                </ul>
+            </section>
 
-            
+            <!-- Improved Gallery Section -->
+            <section class="section gallery-section">
+                <h2 class="gallery-title">Photo Gallery</h2>
+                <div class="gallery">
+                    <div class="gallery-image-container">
+                        <img src="images/beach.jpg" alt="Tropical beach" class="gallery-image">
+                    </div>
+                    <div class="gallery-image-container">
+                        <img src="images/snorkel.jpg" alt="Snorkeling in clear waters" class="gallery-image">
+                    </div>
+                    <div class="gallery-image-container">
+                        <img src="images/dance.avif" alt="Traditional dance festival" class="gallery-image">
+                    </div>
+                    <div class="gallery-image-container">
+                        <img src="images/waterfall.jpg" alt="Scenic waterfall" class="gallery-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section destination">
+                <div class="destination-button">
+                    <button class="cta-button" onclick="window.location.href='https://www.micronesiatour.com/'">
+                        Start Your Island Adventure
+                    </button>
+                </div>
+            </section>
         </main>
 
         <footer>
