@@ -22,14 +22,14 @@
         color: navy;
     }
 
-    nav{
+    .nav{
         display: flex;
         gap: 60px;
         margin: 0;
         padding: 0;
     }
 
-    nav a{
+    .nav a{
         font-size: 20px;
     }
 

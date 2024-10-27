@@ -1,0 +1,89 @@
+@media screen and (min-width: 1024px){
+    header{
+    }
+
+    #menu{
+        display: none;
+    }
+
+    h1{
+        font-size: 50px;
+        padding: 5px;
+    }
+
+    nav{
+        display: block;
+        gap: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    nav a:hover{
+        color: orange;
+        text-decoration: overline;
+    }
+
+
+
+
+
+    main{
+
+    }
+
+    .hero{
+
+    }
+
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    figure{
+        margin: 0;
+        text-align: center;
+    }
+
+    .islands{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 90px;
+        row-gap: 100px;
+        padding: 20px;
+    }
+
+    .islands img{
+        width: 210px;
+        height: 210px;
+    }
+
+    .islands img:hover{
+        box-shadow: 0 0 100px white;
+    }
+
+    /*CULTURE*/
+    .box{
+        border-width: 1px white;
+    }
+
+    .culture, .arts{
+        float: left;
+    }
+
+    .lang, .rel{
+        float: right;
+    }
+
+
+
+
+    footer{
+        font-size: 15px;
+        padding: 10px;
+    }
+}

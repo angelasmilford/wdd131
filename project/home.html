@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Final Website Project</title>
+        <meta name="description" content="Final project's home page.">
+        <meta name="author" content="Angela S Milford">
+        <link rel="stylesheet" href="styles/my-website.css">
+        <link rel="stylesheet" href="styles/my-website-large.css" media="screen and (min-width: 1024px)">
+        <script src="scripts/my-website.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Islands of Micronesia</h1>
+
+            <button id="menu"></button>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="islands.html">Islands</a>
+                <a href="culture.html">Culture</a>
+                <a href="tourism.html">Tourism</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="min-width: 1024px">
+                    <source srcset="images/hero-medium.webp" media="min-width: 768px">
+                    <img src="images/hero-small.webp" alt="Pacific Ocean">
+                </picture>
+            </div>
+
+            <h2>4 Main Island groups of Micronesia</h2>
+
+            <section class="islands">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Caroline_Islands-map.gif" alt="Caroline Islands">
+                    
+                    <h3>Caroline Islands</h3>
+
+                    <figcaption><b>Federated States of Micronesia and Palau</b></figcaption>
+
+                    <p>
+                        The Caroline Islands are an archipelago consisting of about 500 small coral islands. 
+                        The Carolines is made up of two nations: 
+                        the Federated States of Micronesia-- comprising of 600 islands on the east-- and Palau-- comprising of 250 islands on the west.
+                    </p>
+
+                    <a href="https://www.britannica.com/place/Caroline-Islands" target="_blank">
+                        <button class="button">Learn More</button>
+                    </a>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/GilbertIslandsPos.png/1280px-GilbertIslandsPos.png" alt="Gilbert Islands">
+                    <h3>Gilbert Islands</h3>
+
+                    <figcaption><b>Kiribati</b></figcaption>
+
+                    <p>
+                        The Gilbert Islands include sixteen atolls and coral islands. 
+                        The equator line divides the Gilberts, making the northern Gilbert islands and the southern Gilbert islands. 
+                        The Kiribati nations contains all of the Gilbert islands.
+                    </p>
+
+                    <a href="https://www.britannica.com/place/Gilbert-Islands" target="_blank">
+                        <button class="button">Learn More</button>
+                    </a>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Northern_Mariana_Islands_map.gif" alt="Mariana Islands">
+                    
+                    <h3>Mariana Islands</h3>
+                    
+                    <figcaption><b>Northern Mariana Islands and Guam</b></figcaption>
+                    
+                    <p>
+                        The Mariana Islands is an archipelago comprised by the summits of fifteen volcanic mountains. 
+                        The Maraianas have a history of being politically divided among countries, such as the United States, Spain, and Germany. 
+                        The Marianas is made up of Northern Mariana Islands and Guam.
+                    </p>
+                    
+                    <a href="https://www.britannica.com/place/Mariana-Islands" target="_blank">
+                        <button class="button">Learn More</button>
+                    </a>
+                </figure>
+
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/MH_-map_A.png" alt="Marshall Islands">
+                    
+                    <h3>Marshall Islands</h3>
+                    
+                    <figcaption><b>Marshall Islands</b></figcaption>
+                    
+                    <p>
+                        The Marshall Islands consists of twenty-nine atolls and five isolated islands. 
+                        The Marshall's atolls and islands for two groups: the Ratak Chain and the Ralik Chain. 
+                        Ratak meaning sunrise and Ralik meaning sunset. 
+                        All of the islands are part of the Marshall Islands country.
+                    </p>
+                    
+                    <a href="https://www.britannica.com/place/Marshall-Islands" target="_blank">
+                        <button class="button">Learn More</button>
+                    </a>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <p><b>&copy;<span id="currentyear"></span>🏝️ Angela S Milford 🏝️ American Samoa</b></p>
+
+            <p>Last Modified: <span id="lastModified"></span> </p>
+        </footer>
+    </body>
+</html>

@@ -7,6 +7,11 @@ body{
     padding: 0;
 }
 
+header p{
+    color: white;
+    font-size: 20px;
+}
+
 .first-color{
     background-color: #03045E;
 }
@@ -30,7 +35,7 @@ body{
 }
 
 footer{
-
+    text-align: center;
 }
 
 header, footer{
@@ -42,11 +47,11 @@ h1, footer p{
     padding: 20px;
 }
 
-h1, h2, p, .heading, .paragraph{
+h1, h2, p, h4, .heading, .paragraph{
     text-align: center;
 }
 
 .first-color, .second-color, .third-color{
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
