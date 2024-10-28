@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    width: 320px;
+    width: 300px;
 }
 
 :root{
@@ -13,25 +13,28 @@
 
 
 header{
-    background-color: green;
-    color: white;
-    text-align: center;
+
 }
 
 
 
 
 main{
-    margin: 0 auto;
+    background-color: green;
+
 }
 
 
 
 
 footer{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 40px;
-    font-size: 17px;
+
+}
+
+
+
+
+header, footer{
+    background-color: pink;
+    padding: 15px;
 }
