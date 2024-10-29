@@ -4,16 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Review</title>
-        <script href="scripts/form.js" defer></script>
+        <link rel="stylesheet" href="styles/form.css">
+        <script href="scripts/review.js" defer></script>
     </head>
 
     <body>
 
-        <h1>Thank You for Your Review!</h1>
+        <header>
+            <h1>Review Posted!</h1>
+        </header>
+    
+        <main>
+            <p>Thank you for posting your review.</p>
 
-        <p>Your review has been submitted.</p>
-
-        <div id="review-counter"></div>
+            <p>You have posted <span id="reviewCount">0</span> reviews so far!</p>
+            
+            <a href="form.html">Post Another Review</a>
+        </main>
 
         <footer class="footer">
             <p><b>&copy;<span id="currentyear"></span>🏝️ Angela S Milford 🏝️ American Samoa</b></p>
