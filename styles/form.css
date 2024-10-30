@@ -1,7 +1,6 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: "Special Elite", system-ui;
+    background-color: #F08000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,17 +9,19 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-bottom: 20px;
+    font-family: "Creepster", serif;
+    font-size: 20px;
 }
 
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
+    display: flex; /*centers it*/
+    justify-content: center; /*helps center it*/
     align-items: center;
     padding: 20px;
 }
@@ -41,10 +42,7 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-select,
-textarea,
-input[type="date"] {
+input[type="text"], select, textarea, input[type="date"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -67,14 +65,49 @@ legend {
     margin-bottom: 10px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+
+.feature-container {
+    flex-wrap: wrap;  /* Allow wrapping if needed */
+    gap: 20px;  /* Add space between items */
+    align-items: center;  /* Align items vertically */
+}
+  
+.feature-item {
+    display: flex;
+    align-items: center;  /* Align checkbox and label */
+    gap: 5px;  /* Add space between checkbox and label */
+}
+
+.rating-container {
+    display: flex;
+    gap: 10px; /* Adds space between inputs */
+    align-items: center; /* Ensures inputs and labels align vertically */
+}
+
+  
+.rating-container label {
+    cursor: pointer;
+    color: lightgray; /* Default star color */
+    transition: color 0.3s;
+    font-size: 13px;
+}
+  
+.rating-container input:checked + label {
+    color: gold; /* Highlight selected star */
+}
+  
+  /* Ensure previously selected stars stay gold */
+.rating-container input:checked + label ~ label {
+    color: gold;
+}
+
+button{
+    background-color: #F08000;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -84,14 +117,22 @@ input[type="submit"] {
     width: 100%;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: black;
+    color: #F08000
+}
+
+#optional{
+    font-size: 13px;
 }
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
     margin-top: auto;
+    font-size: 17px;
+    font-family: "Butterfly Kids", cursive;
+    font-size: 29px;
 }
