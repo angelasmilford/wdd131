@@ -30,7 +30,7 @@ form {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px black;
     max-width: 500px;
     width: 100%;
 }
@@ -46,7 +46,7 @@ input[type="text"], select, textarea, input[type="date"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -91,7 +91,7 @@ input[type="radio"], input[type="checkbox"] {
   
 .rating-container label {
     cursor: pointer;
-    color: lightgray; /* Default star color */
+    color: black; /* Default star color */
     transition: color 0.3s;
     font-size: 13px;
 }
