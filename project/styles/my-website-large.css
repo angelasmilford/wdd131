@@ -67,6 +67,18 @@
         box-shadow: 0 0 100px white;
     }
 
+    .islands h3{
+        font-size: 25px;
+    }
+
+    figcaption{
+        font-size: 19px;
+    }
+
+    .islands p{
+        font-size: 17px;
+    }
+
     /*CULTURE*/
     .box{
         border: 1px white;
@@ -76,7 +88,7 @@
     }
 
     .box p{
-        font-size: 15px;
+        font-size: 16px;
         width: 100%;
     }
 
