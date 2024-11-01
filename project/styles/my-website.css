@@ -55,7 +55,7 @@ nav.open {
 
 h1{
     padding: 20px;
-    font-size: 25px;
+    font-size: 21px;
 }
 
 nav {
@@ -169,7 +169,7 @@ figcaption{
 }
 
 .island-card{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     width: 120px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -189,13 +189,13 @@ figcaption{
     margin: 0;
     padding: 15px;
     font-size: 19px;
-    color: yellow;
+    color: navy;
     text-align: center;
 }
 
 .island-card p {
     margin: 5px 15px;
-    color: var(--paragraph-color);
+    color: navy;
     font-size: 11px;
 }
 
@@ -220,8 +220,8 @@ figcaption{
 
 /*TOURISM*/
 .cta-button {
-    background-color: #0284c7;
-    color: white;
+    background-color: var(--secondary-color);
+    color: navy;
     border: none;
     padding: 15px 30px;
     font-size: 18px;
