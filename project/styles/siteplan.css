@@ -47,11 +47,26 @@ h1, footer p{
     padding: 20px;
 }
 
-h1, h2, p, h4, .heading, .paragraph{
+h1, h2, h3, p, h4, .heading, .paragraph{
     text-align: center;
 }
 
 .first-color, .second-color, .third-color{
     color: white;
     font-size: 20px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black; /* Sets a black border with 2px width */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.desktop{
+    width: 900px;
+}
+
+.mobile{
+    width: 500px;
 }
