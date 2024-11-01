@@ -32,13 +32,6 @@
 
 
 
-    main{
-    }
-
-    .hero{
-
-    }
-
     h2{
         font-size: 40px;
         text-align: center;
@@ -107,7 +100,10 @@
     }
 
     /*TOURISM*/
+    .gallery{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+    }
 
 
 
